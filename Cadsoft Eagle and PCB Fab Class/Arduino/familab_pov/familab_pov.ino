@@ -15,13 +15,15 @@
 
 // Global Variables
 
-
+int columnsDrawn = 0;
+int columnsPerRotation = 50;
+char newSymbol[5] = {0,0,0,0,0};
 // message to be displayed -- only 'a-z' for now.
-char message[] = "familab";
+char message[] = "abc     ";
 
 
-byte colTime = 2;  //ms
-byte chrTime = 5;
+byte colTime = 1;  //ms
+byte chrTime = 3;
 
 
 byte msgLen;
@@ -67,14 +69,55 @@ void setup() {
 
 
 void loop() {
-  for (byte i=0; i<msgLen; i++) {
-    for (byte j=0; j<symLen; j++) {
+  
+  columnsDrawn = 0;
+  for (byte i=0; i<msgLen  && (columnsDrawn < columnsPerRotation ); i++) {
+    
+    if (message[i] >= 97 && message[i] <=122){
+      newSymbol[0] =  ledTransform( symbol[(message[i]-ASCII_OFFSET) *symLen +0]  );
+      newSymbol[1] =  ledTransform( symbol[(message[i]-ASCII_OFFSET) *symLen +1]  );
+      newSymbol[2] =  ledTransform( symbol[(message[i]-ASCII_OFFSET) *symLen +2]  );
+      newSymbol[3] =  ledTransform( symbol[(message[i]-ASCII_OFFSET) *symLen +3]  );
+      newSymbol[4] =  ledTransform( symbol[(message[i]-ASCII_OFFSET) *symLen +4]  );
+    }
+   else{
+      newSymbol[0] = 0;
+      newSymbol[1] = 0;
+      newSymbol[2] = 0;
+      newSymbol[3] = 0;
+      newSymbol[4] = 0;
+     
+     
+   }
+   
+    
+    for (byte j=0; j<symLen && (columnsDrawn < columnsPerRotation ); j++) {
       // assign the symbol table column to the LEDs
-      PORTB = symbol[(message[i]-ASCII_OFFSET) *symLen +j];
+      PORTB = newSymbol[j];
       delay(colTime);
+      columnsDrawn++;
     }
     delay(chrTime);
   }
 } // loop()
 
+
+byte ledTransform(byte oldLED){
+  byte newLED = 0;
+  
+ if (oldLED & 0x10) //LED 1
+  newLED += 0x4; //LED is now at PB2
+ if (oldLED & 0x8) //LED 2
+  newLED += 0x2; //LED is still at PB1
+ if (oldLED & 0x4) //LED 3
+  newLED += 0x1; //LED is now at PB0 
+ if (oldLED & 0x2) //LED 4
+  newLED += 0x10; //LED is now at PB4   
+ if (oldLED & 0x1) //LED 5
+  newLED += 0x8; //LED is now at PB3 
+ 
+ 
+ 
+return newLED;
+}
 
