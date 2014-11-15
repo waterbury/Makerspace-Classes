@@ -1252,7 +1252,7 @@ Source: http://www.osram.convergy.de/ ... LG M470.pdf</description>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
-<symbol name="ICSP_PROGRAM">
+<symbol name="ISP_PROGRAM">
 <wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
 <wire x1="0" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
 <wire x1="15.24" y1="17.78" x2="15.24" y2="0" width="0.254" layer="94"/>
@@ -1714,9 +1714,9 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ICSP_PROGRAM">
+<deviceset name="ISP_PROGRAM">
 <gates>
-<gate name="G$1" symbol="ICSP_PROGRAM" x="0" y="0"/>
+<gate name="G$1" symbol="ISP_PROGRAM" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="POV_ISP_CONNECTOR">

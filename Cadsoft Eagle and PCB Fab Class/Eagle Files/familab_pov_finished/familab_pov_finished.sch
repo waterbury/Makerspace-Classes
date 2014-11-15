@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1284,62 +1284,6 @@ Source: http://www.osram.convergy.de/ ... LG M470.pdf</description>
 <text x="2.54" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <hole x="0" y="0" drill="2.7"/>
 </package>
-<package name="POV_ISP_CONNECTOR">
-<smd name="RESET" x="0" y="-5.08" dx="6" dy="1.778" layer="1"/>
-<smd name="GND" x="0" y="-2.54" dx="6" dy="1.778" layer="1"/>
-<smd name="MOSI" x="0" y="0" dx="6" dy="1.778" layer="1"/>
-<smd name="MISO" x="0" y="2.54" dx="6" dy="1.778" layer="1"/>
-<smd name="SCK" x="0" y="5.08" dx="6" dy="1.778" layer="1"/>
-<smd name="VCC" x="0" y="7.62" dx="6" dy="1.778" layer="1"/>
-</package>
-<package name="ATTINY_PROGRAM_SMD_HEADER">
-<smd name="RESET" x="-5.715" y="3.81" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="GND" x="-5.715" y="-3.81" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="VCC" x="5.715" y="3.81" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="SCK" x="5.715" y="1.27" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="MISO" x="5.715" y="-1.27" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="MOSI" x="5.715" y="-3.81" dx="1.6764" dy="0.8128" layer="1"/>
-<smd name="P$1" x="-0.635" y="6.35" dx="1.27" dy="1.27" layer="1" roundness="100"/>
-<smd name="P$2" x="-3.175" y="6.35" dx="1.27" dy="1.27" layer="1" roundness="100"/>
-<smd name="P$3" x="1.905" y="6.35" dx="1.27" dy="1.27" layer="1" roundness="100"/>
-<smd name="P$4" x="-0.635" y="-6.35" dx="1.27" dy="1.27" layer="1" roundness="100"/>
-</package>
-<package name="ATTINY_PROGRAM_THROUGH_HOLE_HEADER">
-<pad name="RESET" x="-5.715" y="3.81" drill="1.016" shape="square"/>
-<pad name="P$9" x="1.905" y="6.35" drill="1.016" shape="square"/>
-<pad name="P$13" x="-0.635" y="6.35" drill="1.016" shape="square"/>
-<pad name="P$14" x="-3.175" y="6.35" drill="1.016" shape="square"/>
-<pad name="GND" x="-5.715" y="-3.81" drill="1.016" shape="square"/>
-<pad name="MOSI" x="5.715" y="-3.81" drill="1.016" shape="square"/>
-<pad name="MISO" x="5.715" y="-1.27" drill="1.016" shape="square"/>
-<pad name="SCK" x="5.715" y="1.27" drill="1.016" shape="square"/>
-<pad name="VCC" x="5.715" y="3.81" drill="1.016" shape="square"/>
-<pad name="P$5" x="-0.635" y="-6.35" drill="1.016" shape="square"/>
-</package>
-<package name="JUMPER_SMD_SIDE">
-<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-3.81" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.4064" layer="21"/>
-<text x="-3.302" y="1.905" size="1.778" layer="21">&gt;NAME</text>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<smd name="P$1" x="-2.54" y="0" dx="1.27" dy="3.81" layer="1"/>
-<smd name="P$2" x="0" y="0" dx="1.27" dy="3.81" layer="1"/>
-</package>
-<package name="JUMPER">
-<pad name="P$1" x="0" y="0" drill="0.899159375" diameter="1.524" shape="square"/>
-<pad name="P$2" x="2.54" y="0" drill="0.899159375" diameter="1.524" shape="square"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="1.27" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<text x="-0.762" y="1.905" size="1.778" layer="21">&gt;NAME</text>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SINGLE_BATTERY">
@@ -1384,37 +1328,6 @@ Source: http://www.osram.convergy.de/ ... LG M470.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
-</symbol>
-<symbol name="ICSP_PROGRAM">
-<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
-<wire x1="0" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="RESET" x="-5.08" y="15.24" length="middle"/>
-<pin name="MISO" x="-5.08" y="12.7" length="middle"/>
-<pin name="MOSI" x="-5.08" y="10.16" length="middle"/>
-<pin name="SCK" x="-5.08" y="7.62" length="middle"/>
-<pin name="VCC" x="-5.08" y="5.08" length="middle"/>
-<pin name="GND" x="-5.08" y="2.54" length="middle"/>
-</symbol>
-<symbol name="JUMPER">
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
-<wire x1="0" y1="-1.27" x2="3.81" y2="-1.27" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="0" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="0" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="0" y1="1.27" x2="-3.81" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
-<text x="0" y="1.905" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
-<circle x="-1.905" y="0" radius="0.635" width="0.4064" layer="94"/>
-<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
-<text x="0" y="-1.905" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-<circle x="1.905" y="0" radius="0.635" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1847,78 +1760,6 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ICSP_PROGRAM">
-<gates>
-<gate name="G$1" symbol="ICSP_PROGRAM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="ATTINY_PROGRAM_SMD_HEADER">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="THRU_HOLE" package="ATTINY_PROGRAM_THROUGH_HOLE_HEADER">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="POV_ISP_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER" prefix="J" uservalue="yes">
-<description>JUMPER 2-PIN 0.1" PITCH FOR STANDARD HEADERS</description>
-<gates>
-<gate name="G$1" symbol="JUMPER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="STD" package="JUMPER">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SIDE" package="JUMPER_SMD_SIDE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-DigitalIC">
@@ -2078,6 +1919,129 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="pov_class_finished">
+<packages>
+<package name="POV_ISP_CONNECTOR">
+<smd name="RESET" x="0" y="-5.08" dx="6" dy="1.778" layer="1"/>
+<smd name="GND" x="0" y="-2.54" dx="6" dy="1.778" layer="1"/>
+<smd name="MOSI" x="0" y="0" dx="6" dy="1.778" layer="1"/>
+<smd name="MISO" x="0" y="2.54" dx="6" dy="1.778" layer="1"/>
+<smd name="SCK" x="0" y="5.08" dx="6" dy="1.778" layer="1"/>
+<smd name="VCC" x="0" y="7.62" dx="6" dy="1.778" layer="1"/>
+<text x="-10.795" y="2.54" size="1.016" layer="25" font="vector" align="center-left">MISO/PB1</text>
+<text x="-10.16" y="5.08" size="1.016" layer="25" font="vector" align="center-left">SCK/PB2</text>
+<text x="-10.795" y="0" size="1.016" layer="25" font="vector" align="center-left">MOSI/PB0</text>
+<text x="-6.35" y="-2.54" size="1.016" layer="25" font="vector" align="center-left">GND</text>
+<text x="-10.16" y="-5.08" size="1.016" layer="25" font="vector" align="center-left">RST/PB5</text>
+<text x="-3.81" y="9.525" size="1.016" layer="25" font="vector" align="center-left">VCC</text>
+</package>
+<package name="JUMPER_SMD_SIDE">
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-3.81" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.4064" layer="21"/>
+<text x="-3.302" y="1.905" size="1.778" layer="21">&gt;NAME</text>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
+<smd name="P$1" x="-2.54" y="0" dx="1.27" dy="3.81" layer="1"/>
+<smd name="P$2" x="0" y="0" dx="1.27" dy="3.81" layer="1"/>
+</package>
+<package name="JUMPER">
+<pad name="P$1" x="0" y="0" drill="0.899159375" diameter="1.524" shape="square"/>
+<pad name="P$2" x="2.54" y="0" drill="0.899159375" diameter="1.524" shape="square"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="1.27" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.4064" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
+<text x="-0.762" y="1.905" size="1.778" layer="21">&gt;NAME</text>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.4064" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ICSP_PROGRAM">
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="RESET" x="-5.08" y="15.24" length="middle"/>
+<pin name="MISO" x="-5.08" y="12.7" length="middle"/>
+<pin name="MOSI" x="-5.08" y="10.16" length="middle"/>
+<pin name="SCK" x="-5.08" y="7.62" length="middle"/>
+<pin name="VCC" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND" x="-5.08" y="2.54" length="middle"/>
+</symbol>
+<symbol name="JUMPER">
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="-1.27" x2="3.81" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="1.27" x2="-3.81" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.4064" layer="94"/>
+<text x="0" y="1.905" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<circle x="-1.905" y="0" radius="0.635" width="0.4064" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="-1.905" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<circle x="1.905" y="0" radius="0.635" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ICSP_PROGRAM">
+<gates>
+<gate name="G$1" symbol="ICSP_PROGRAM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POV_ISP_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER" prefix="J" uservalue="yes">
+<description>JUMPER 2-PIN 0.1" PITCH FOR STANDARD HEADERS</description>
+<gates>
+<gate name="G$1" symbol="JUMPER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="STD" package="JUMPER">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SIDE" package="JUMPER_SMD_SIDE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2101,11 +2065,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATTINY45" device="TINY85-20-SMT" value="Tiny85-20-SMT"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="J1" library="pov_class" deviceset="JUMPER" device="SIDE"/>
+<part name="J1" library="pov_class_finished" deviceset="JUMPER" device="SIDE"/>
 <part name="U$2" library="pov_class" deviceset="MOUNTING_PAD" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="pov_class" deviceset="ICSP_PROGRAM" device=""/>
+<part name="U$4" library="pov_class_finished" deviceset="ICSP_PROGRAM" device=""/>
 </parts>
 <sheets>
 <sheet>
